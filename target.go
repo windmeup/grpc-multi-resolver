@@ -16,8 +16,6 @@ func ParseTarget(target string) (ret resolver.Target) {
 	}
 
 	return resolver.Target{
-		Scheme:    u.Scheme,
-		Authority: u.Host,
-		URL:       *u,
+		URL: *u,
 	}
 }
